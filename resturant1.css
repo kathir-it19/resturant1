@@ -1,0 +1,141 @@
+:root{
+    --yellow:#F7CD46;
+    --green:#ABF62D;
+    --red: #DE5935;
+    --white: whitesmoke;
+    --blue:#4A5FC1;
+    
+}
+body,h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.landing{
+    background-image: url("main-qimg-0175b6acfb4bf57eaa0278eb14c521a5.webp");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+}
+.landing,.maintext{
+    color: wheat;
+}
+header a{
+    padding: .35em;
+    text-decoration: none;
+    color: var(--yellow);
+    background-color: rgb(101, 96, 96);
+    min-width: 120px;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+}
+#logo{
+    flex: 3;
+    font-size: 1em;
+    min-width: 260px;
+}
+nav{
+    flex: 2;
+    display: flex;
+    font-size: 1.28em;
+    align-items: center;
+}
+header h2 i,nav a i{
+    margin-right: .5em;
+}
+nav a{
+    flex: 1;
+}
+nav a:hover{
+    color: var(--green);
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;
+}
+.tagline1{
+    color: var(--red);
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.tagline2{
+    color: var(--green);
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+.maintext div{
+    margin-top: .75em;
+}
+.maintext button{
+    width: 20vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .75em;
+    background-color: var(--green);
+    color: var(--white);
+    border: 1px solid var(--green);
+    font-size: 1em;
+}
+.menu,.location{
+   display: grid;
+   color: var(--white);
+   grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+   background: linear-gradient(126deg, rgb(57, 59, 58) 50%, rgb(66, 67, 70) 0%);
+}
+#menuhead,#lochead{
+    font-size: 2.5em;
+    color: var(--red);
+    background:  rgb(57, 59, 58);
+    display: flex;
+    justify-content: center;
+}
+.menu th{
+    color: var(--green);
+}
+table{
+    width: 100%;
+    padding: 1em;
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+}
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+.menu td:nth-child(2){
+    justify-self: right;
+}
+.menu th{
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 1em;
+}
+.location h2{
+    color: var(--green);
+    margin-bottom: .8em;
+}
+.location{
+    display: flex;
+    flex-wrap: wrap;
+}
+.location div{
+    flex: 1;
+    padding: 1em;
+    min-width: 220px;
+}
+#copy{
+    background-color: rgb(36, 34, 34);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    padding: .35em;
+}
